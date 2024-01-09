@@ -14,6 +14,8 @@ console.log('JS OK');
 5 Stampiamo
 */
 
+// Recupero id
+const paragraphElement = document.getElementById('paragraph');
 const userWord = prompt('Inserisci una parola').trim();
 
 console.log(userWord);
@@ -32,7 +34,9 @@ if (!userWord || !isNaN(userWord)) {
         message = 'Parola non palindroma'
     }
     
-    console.log(message); 
+    console.log(message);
+    
+    paragraphElement.innerText = message;
 }
 
 
