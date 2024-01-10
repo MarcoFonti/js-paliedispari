@@ -68,9 +68,12 @@ console.log(sum);
 
 console.log (isEvenShots());
 
+const pageEvenShots = isEvenShots();
+
 userEvenShotsElement.innerText = userEvenShots;
 userNumberElement.innerText = userNumber;
 sumElement.innerText = sum;
 randomElement.innerText = resultRandom;
+isEvenShotsElement.innerText = pageEvenShots;
 
 

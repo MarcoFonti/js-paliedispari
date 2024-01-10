@@ -39,13 +39,12 @@ const resultRandom = (1, 5);
 
 function isEvenShots (mess) {
     
-    let message = 'Il numero della somma è: ';
+    let message = 'Il numero della somma è: Dispari ';
     
     if (sum % 2 === 0) {
-        message += 'Pari'
-    } else {
-        message += 'Dispari'
-    }
+        message = 'Il numero della somma è: Pari'
+        return message;
+    } 
 
     console.log (message);
 }
