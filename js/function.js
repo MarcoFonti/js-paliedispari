@@ -9,13 +9,26 @@
 3 Validazione
 4 Creiamo un if 
 5 Stampiamo
-
-
-function isPalindromicWord(name){
-const nameReverse = name.split('').reverse().join('');
-return nameReverse;
-}
 */
+
+
+/* CREO FUNZIONE IN CUI PASSO COME ARGOMENTO LA VARIBILE USERWORD */
+function isPalindromicWord(name){
+
+/* CREO UNA VARIBILE
+SPLIT: CONVERTO LA STRINGA IN UN ARRAY DI SINGOLI CARATTERI
+REVERSE: INVERTO ORDINE DEGLI ELEMENTI ALL'INTERNO DELL'ARRAY
+JOIN: RIUNISCO GLI ELEMENTI DELL'ARRAY IN UNA STRIGA IN MODO CHE LA STRINGA SIA CONVERTITA
+*/
+const nameReverse = name.split('').reverse().join('');
+
+
+/* RESTITUISCO LA VARIBILE */
+return nameReverse;
+
+
+}
+
 
 //! SCALETTA ESERCIZIO PARI E DISPARI
 
@@ -28,26 +41,41 @@ return nameReverse;
 6 Stampiamo
 */
 
+/* CREO UNA FUNZIONE A CUI MANDO 2 ARGOMENTI DELLA VARIBILE RESULTRANDOM*/
 function getRandom (min, max) {
+
+    /* CREO UNA VARIBILE IN CUI SALVO I NUMERI RANDOM*/
     const randomNumber = Math.floor(Math.random() * (max + 1 - min)) + min
+
+    /* RESTITUISCO LA VARIBILE SALVATA */
     return randomNumber;
 }
 
-const resultRandom = (1, 5);
+/* ARGOMENTI DA PASSARE NELLA FUNZIONE GETRANDOM */
+const resultRandom = getRandom(1, 5);
 
 
-
-function isEvenShots (mess) {
+/* CREO UNA FUNZIONE*/
+function isEvenShots (sum) {
     
+    /* CREO UNA VARIBILE DA MANIPOLARE NELLA CONDIZIONE */
     let message = 'Il numero della somma è: Dispari ';
     
+    /* SE LA VARIBILE SUM E' MULTIPLA DI 2 */
     if (sum % 2 === 0) {
+
+        /* RINOMINO LA VARIBILE MESSAGE  */
         message = 'Il numero della somma è: Pari'
+
+        /* RESTITUISCO LA VARIBILE */
         return message;
+
     } 
 
+    /* CONTROLLO RISPOSTA */
     console.log (message);
 }
+
 
 
 
